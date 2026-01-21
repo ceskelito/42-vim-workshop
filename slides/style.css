@@ -1,0 +1,13 @@
+section.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+section.grid-2x2 img {
+  width: 100%;
+  max-width: 400px;
+}

@@ -1,0 +1,120 @@
+# Introduzione
+	- ## Perchè Vim
+		- ***Mettere curiosità e alleggerire***
+		- Rassicurare sulla curva di apprendimento
+		- Spiegare a parole l'utilità di vim
+		- Premessa/Promessa: oggi non diventate forti, ma vi sbloccate
+	- ## Editor Modale (vs classico)
+		- ***Far capire perchè vim è diverso***
+		- Cosa è un editor modale
+		- Paragoni e differenze con un editor classico
+		  collapsed:: true
+			- tenere premuto <CTRL> come fosse una modalità
+			- possibilità derivanti dal digitare != scrivere
+	- ## Filosofia "Terminal as an IDE"
+		- ***Spiegare che la potenza di Vim deriva dal vivere nel terminale***
+		- Mostrare la mia config ad esempio
+		- Parlare di come nel terminale si possa fare tutto
+		- Enfatizzare la portatilità del terminale
+		  collapsed:: true
+			- Ad esempio non serve ambiente grafico (ok server)
+- # Muoversi nel file
+	- ***Mostrare le prime peculiarità di VIM***
+	- ## Motions di base
+		- ***mostrare quanto è comodo e rapido***
+		- h, j, k, l
+		- motion fondamentali
+			- w - word
+			- b - back - magari non menzionare
+			- e- end
+			- G - end of file
+			- gg - start of file
+			- 0 - start of line
+			- $ - end of line
+		- motions + count
+		  collapsed:: true
+			- 3w - three words
+			- 10j - 10 lines down
+	- ## Search
+		- mostrare esempio di ricerca
+		- n / N per muoversi
+	- ## Go to line
+		- Command line : num_riga
+		- num_riga + gg
+	- ## Il linguaggio di Vim - come comunicare
+		- ***Dimostare quanto intuitivo***
+		- operator + [count] + motion
+		- esempio in linguaggio naturale
+- # Lavorare nel file
+	- ***Esempi concreti di modifiche avanzate***
+	- *Abbiamo visto come muoverci nel file, passiamo all'azione.*
+	- ## Le modalità di Vim
+		- ***Far comprendere le modalità in base alle necessità***
+		- Normal
+			- *Modalità normale >>> Insert*
+			- La principale modalità di lavoro
+			- Operators di base
+				- Singoli
+				  collapsed:: true
+					- y - yank
+					- p - put
+					- P - put before
+					- d - delete
+				- In linea
+				  collapsed:: true
+					- yy - yank line
+					- dd - delete line
+			- Motion + [count] + operators
+				- ***Mostra la potenza del modello combinatorio***
+				- Esempi:
+					- dw - delete word
+					- d$ - delete to end of line
+					- c3e - change up to the end of the third word
+					- 3dd - delete 3 lines
+		- Insert
+			- Entrare in Insert Mode
+				- Insert: i, I
+				- Append: a, A
+				- Open: o, O
+				- Change: c - accennare
+				- Replace: r, R - accennare
+		- Visual
+			- È la modalità più familiare per i nuovi utenti
+				- Permette di invertire il paradigma azione->soggetto (operator->motion)
+			- Motion in visual
+				- Dimostare che è come normal ma seleziona
+			- Operators in visual
+				- Rende semplici operazioni complesse
+				- Riscontro visivo prima di operare
+		- Command Line
+			- muoversi di linea
+			- salva / esci dal file
+			- impostazioni rapide
+		- **ESC** il tuo migliore amico
+			- premi anche più volte
+			- panic button
+			- torni a normale
+	- ## Ripetizione dei comandi e undo
+		- ***Nulla è per sempre - don't panic***
+		- u - undo
+		- U - undo line
+		- <C-r> - Redo
+		- . - repet last modification
+- # Personalizzazione
+	- *Quello che avete visto è vim nudo. Adesso scopriamo qualcosa in più*
+	- ***Mostrare configurazioni di base e come possano agevolare***
+	- ## Vimrc
+		- Cosa è vimrc
+		- Configurazione di esempio
+	- ## Vimscript e Plugins
+		- Accennare alla estensibilità di vim
+		- Se sono già bravi mostrare vimplug
+		- Spiegare che anche l'header42 è una funzione
+- # La pratica è l'unico insegnante
+	- Mostrare vimtutor
+	- Mostrare estensivamente il menù help
+- # Workflow avanzato - Orizzonti possbili
+	- ***Accennare solo***
+	- Finestre multiple
+	- Registri e macro
+-
