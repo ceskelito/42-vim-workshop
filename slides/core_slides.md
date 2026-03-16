@@ -198,15 +198,13 @@ Uscire sempre con **ESC**.
 
 ### Selezionare prima di agire
 
-| Fase | Azione |
-|-----|--------|
-| 1 | Entri in Visual |
-| 2 | Ti muovi selezionando |
-| 3 | Applichi un operatore |
+Entri in Visual.
+Ti muovi selezionando.
+Applichi un operatore.
 
-È familiare, ma meno potente del modello base.
+È familiare, ma più macchinoso del modello base.
 
-Usala per eseguire operazioni complesse, avendo un riscontro visivo prima di applicare le modifiche.
+Usala per eseguire azioni su zone ampie di codice, avendo un riscontro visivo prima di applicare le modifiche.
 
 ---
 
