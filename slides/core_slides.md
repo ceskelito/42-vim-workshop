@@ -203,8 +203,7 @@ Motions -> muovendo il cursore selezioni.
 Operators -> si applicano sulla selezione.
 
 È familiare, ma più macchinoso del modello base.
-
-Usala per eseguire azioni su zone ampie di codice,  <!-- avendo un riscontro visivo prima di applicare le modifiche. -->
+Usala per eseguire azioni su zone ampie di codice.  <!-- avendo un riscontro visivo prima di applicare le modifiche. -->
 
 ---
 
