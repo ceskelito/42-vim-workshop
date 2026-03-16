@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 theme: default
 paginate: false
 ---
@@ -12,9 +12,8 @@ a cura di **rceschel**
 
 **Obiettivi di oggi**
 
-- Abbracciare il paradigma di **editor modale**
-- Familiarizzare con Vim e i suoi concetti
-- Imparare a muoversi con naturalezza in un file
+- Comprendere il paradigma di **editor modale**
+- Muoversi con naturalezza in un file
 - Imparare a **personalizzare l'ambiente** di Vim
 - Scoprire come approfondire e allenarsi in autonomia
 
@@ -24,7 +23,7 @@ a cura di **rceschel**
 
 - È leggero, veloce, sempre presente
 - È integrato nel **terminale**, il nostro ambiente
-- All'inizio è scarno, ma può essere stravolto
+- All'inizio è scarno, ma può essere riempito
 
 Vim appare vuoto e dispersivo, ma per questo potrà conformarsi ad ogni nostra esigenza.
 
@@ -100,7 +99,7 @@ Movimenti fondamentali:
 
 ---
 
-## Muoversi nel file
+<!-- ## Muoversi nel file
 
 Movimenti globali:
 
@@ -118,27 +117,7 @@ Movimenti mirati:
     - `n` → occorrenza successiva
     - `N` → occorrenza precedente
 
----
-
-<!--
-backgroundImage: url('img/red_button_esc.png')
-backgroundSize: 670px
-backgroundPosition: right
-backgroundRepeat: no-repeat
--->
-
-## Il panic button
-
-Se non sai cosa sta succedendo:
-
-## **ESC**
-
-- Torni sempre in Normal mode
-- Puoi premerlo più volte
-
-Premilo senza paura, o quando ne hai.
-
----
+--- -->
 
 <!-- backgroundImage: color(white)-->
 
@@ -150,7 +129,6 @@ In Normal mode:
 
 - `d` → delete (cancella / taglia)
 - `y` → yank (copia)
-- `c` → change (cancella e scrivi)
 - `p` → put (incolla)
 
 
@@ -180,10 +158,11 @@ Traduce in comandi il nostro linguaggio naturale.
 | Comando | Significato |
 |--------|-------------|
 | `dw` | delete word |
+| `d2w` | delete 2 words |
 | `d$` | delete to end of line |
-| `3dd` | delete 3 lines |
-| `yw` | yank word |
-| `yy` | yank line |
+| `dd` | delete line |
+| `3dd` | 3 times delete line |
+
 
 Stesso movimento, operatore diverso.
 **Nota**: un operatore ripetuto due volte si applica a tutta la linea.
@@ -199,7 +178,7 @@ backgroundPosition: center right
 backgroundRepeat: no-repeat
 -->
 
-### Finalmente si scrive
+<!-- ### Finalmente si scrive -->
 
 | Comando | Dove scriverai |
 |--------|---------|
@@ -240,7 +219,8 @@ Usala per eseguire operazioni complesse, avendo un riscontro visivo prima di app
 | `:x` | salva ed esci |
 | `:42` | vai alla riga 42 |
 
-Modalità diversa da Normal e Insert.
+Nella command line possiamo dare comandi e istruzioni direttamente a Vim.
+È utile per cambiare impostazioni al volo, e per eseguire operazioni avanzate.
 
 ---
 
@@ -255,13 +235,35 @@ Modalità diversa da Normal e Insert.
 
 ---
 
+<!--
+backgroundImage: url('img/red_button_esc.png')
+backgroundSize: 670px
+backgroundPosition: right
+backgroundRepeat: no-repeat
+-->
+
+## Il panic button
+
+Se non sai cosa sta succedendo:
+
+## **ESC**
+
+- Torni sempre in Normal mode
+- Puoi premerlo più volte
+
+Premilo senza paura, o quando ne hai.
+
+---
+
+<!-- backgroundImage: color(white)-->
+
 ## Sbagliare è permesso
 
 | Comando | Effetto |
 |--------|---------|
-| `u` | undo |
-| `U` | undo su tutta la riga |
-| `<C-r>` | redo |
+| `u` | annulla l'ultima modifica |
+| `U` | annulla tutte le modifiche sulla riga corrente |
+| `<C-r>` | ripristina le modifiche annullate |
 | `.` | ripete ultima modifica |
 
 Riduce errori e fatica.
@@ -283,8 +285,8 @@ Questo è **il core di Vim**.
 
 Per praticare:
 
-- `vimtutor`
-- `:help`
+- `vimtutor` - Programma di guida introduttiva comprensiva ed estesa a Vim
+- `:help` - Menù di aiuto completo su tutto Vim
 
 La velocità arriva **solo con la pratica**.
 
@@ -299,6 +301,10 @@ backgroundRepeat: no-repeat
 
 # Personalizzazione
 ## Creare il proprio ambiente
+
+---
+
+PARLARE DI .vimrc E COME VIENE LETTO
 
 ---
 <!-- backgroundImage: color(white) -->
