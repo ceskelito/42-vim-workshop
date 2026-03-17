@@ -1,5 +1,34 @@
 ---
 marp: false
+
+<!-- TOC -->
+
+## Table of Contents
+
+- [paginate: false](#paginate-false)
+- [Perché Vim](#perché-vim)
+- [Vim è diverso](#vim-è-diverso)
+- [Editor Modale](#editor-modale)
+- [| CTRL / menù | Modalità |](#ctrl--menù--modalità)
+- [Editor modale](#editor-modale)
+- [Una casa per tutti](#una-casa-per-tutti)
+- [Muoversi nel file](#muoversi-nel-file)
+- [Lavorare nel file](#lavorare-nel-file)
+- [Vim è un linguaggio](#vim-è-un-linguaggio)
+- [Il modello combinatorio](#il-modello-combinatorio)
+- [Insert mode](#insert-mode)
+- [Visual mode](#visual-mode)
+- [Command line](#command-line)
+- [Cercare nel file](#cercare-nel-file)
+- [Il panic button](#il-panic-button)
+- [**ESC**](#esc)
+- [Sbagliare è permesso](#sbagliare-è-permesso)
+- [Cosa avete visto](#cosa-avete-visto)
+- [E adesso?](#e-adesso)
+- [Creare il proprio ambiente](#creare-il-proprio-ambiente)
+
+<!-- /TOC -->
+
 theme: default
 paginate: false
 ---
@@ -149,7 +178,7 @@ Traduce in comandi il nostro linguaggio naturale.
 
 - "Delete Word"
 - "Yank to the end of line"
-- "Delete three lines"
+- "Move three times down"
  
 ---
 
@@ -164,7 +193,7 @@ Traduce in comandi il nostro linguaggio naturale.
 | `3dd` | 3 times delete line |
 
 
-Stesso movimento, operatore diverso.
+Stesso *operator*, diverse *motion*.
 **Nota**: un operatore ripetuto due volte si applica a tutta la linea.
 
 ---
@@ -179,6 +208,8 @@ backgroundRepeat: no-repeat
 -->
 
 <!-- ### Finalmente si scrive -->
+
+Ci sono vari modi di entare in insert mode.
 
 | Comando | Dove scriverai |
 |--------|---------|
@@ -198,9 +229,11 @@ Uscire sempre con **ESC**.
 
 ### Selezionare prima di agire
 
-V -> entri in visual mode.
-Motions -> muovendo il cursore selezioni.
-Operators -> si applicano sulla selezione.
+|           |                               |
+| --------- | ----------------------------- |
+| V         | entri in visual mode          |
+| Motions   | muovendo il cursore selezioni |
+| Operators | si applicano sulla selezione  |
 
 È familiare, ma più macchinoso del modello base.
 Usala per eseguire azioni su zone ampie di codice.  <!-- avendo un riscontro visivo prima di applicare le modifiche. -->
@@ -209,12 +242,12 @@ Usala per eseguire azioni su zone ampie di codice.  <!-- avendo un riscontro vis
 
 ## Command line
 
-| Comando | Azione |
-|--------|--------|
-| `:w` | salva |
-| `:q` | esci |
-| `:x` | salva ed esci |
-| `:42` | vai alla riga 42 |
+| Comando | Azione           |
+| ------- | ---------------- |
+| `:w`    | salva            |
+| `:q`    | esci             |
+| `:x`    | salva ed esci    |
+| `:42`   | vai alla riga 42 |
 
 Nella command line possiamo dare comandi e istruzioni direttamente a Vim.
 È utile per cambiare impostazioni al volo, e per eseguire operazioni avanzate.
@@ -223,12 +256,12 @@ Nella command line possiamo dare comandi e istruzioni direttamente a Vim.
 
 ## Cercare nel file
 
-| Comando | Azione |
-|--------|--------|
-| `/test` | cerca avanti |
-| `?test` | cerca indietro |
-| `n` | prossimo risultato |
-| `N` | precedente |
+| Comando | Azione             |
+| ------- | ------------------ |
+| `/test` | cerca avanti       |
+| `?test` | cerca indietro     |
+| `n`     | prossimo risultato |
+| `N`     | precedente         |
 
 ---
 
@@ -238,6 +271,7 @@ backgroundSize: 670px
 backgroundPosition: right
 backgroundRepeat: no-repeat
 -->
+
 
 ## Il panic button
 
@@ -256,12 +290,12 @@ Premilo senza paura, o quando ne hai.
 
 ## Sbagliare è permesso
 
-| Comando | Effetto |
-|--------|---------|
-| `u` | annulla l'ultima modifica |
-| `U` | annulla tutte le modifiche sulla riga corrente |
-| `<C-r>` | ripristina le modifiche annullate |
-| `.` | ripete ultima modifica |
+| Comando | Effetto                                        |
+| ------- | ---------------------------------------------- |
+| `u`     | annulla l'ultima modifica                      |
+| `U`     | annulla tutte le modifiche sulla riga corrente |
+| `<C-r>` | ripristina le modifiche annullate              |
+| `.`     | ripete ultima modifica                         |
 
 Riduce errori e fatica.
 
