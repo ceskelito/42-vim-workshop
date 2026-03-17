@@ -255,6 +255,19 @@ Usala per eseguire azioni su zone ampie di codice.
 
 ---
 
+<!--
+backgroundImage: url('img/hackerman.png')
+backgroundSize: 700px
+backgroundPosition: calc(100% - 50px) center
+backgroundRepeat: no-repeat
+-->
+
+# Command line
+## I've got the power
+
+---
+
+<!-- backgroundImage: color(white)-->
 ## Command line
 
 | Comando | Azione           |
