@@ -202,6 +202,9 @@ backgroundRepeat: no-repeat
 
 # Insert mode
 
+<img src="img/writing.gif" alt="Descrizione dell'immagine" width="300">
+<!-- <img src="img/WRITE!.png" alt="Descrizione dell'immagine" width="300"> -->
+
 ---
 
 <!-- backgroundImage: color(white)-->
@@ -216,6 +219,8 @@ Ci sono vari modi di entare in insert mode.
 | `A`     | fine riga         |
 | `o`     | nuova riga sotto  |
 | `O`     | nuova riga sopra  |
+
+<!-- DEVO METTERE LE GIF ACCANTO LA TABELLA -->
 
 Uscire sempre con **ESC**.
 
