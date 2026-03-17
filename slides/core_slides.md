@@ -46,37 +46,51 @@ Vim appare vuoto e dispersivo, ma per questo potrà conformarsi ad ogni nostra e
 
 ---
 
-## Vim è diverso
+## Vim è un editor modale
 
-Vim **non** è un editor classico.
+Il flusso di lavoro cambia a seconda della modalità in cui ti trovi:
 
-- Non scrivi sempre
-- Non usi menu o mouse
-- Non tieni premuti modificatori
+<!-- | Normal                                      | Visual                                  | Insert              | -->
+<!-- | ------------------------------------------- | --------------------------------------- | ------------------- | -->
+<!-- | Eseguo operazioni rapide e mirate sul testo | Effettuo selezioni e modifiche di ampie | Inserisco del testo | -->
 
-Vim funziona per **modalità**.
+<table>
+<br>
+  <tr>
+    <th>Normal</th>
+    <td>Eseguo operazioni rapide e mirate sul testo</td>
+  </tr>
+  <tr>
+    <th>Visual</th>
+    <td>Effettuo selezioni e modifiche ampie</td>
+  </tr>
+  <tr>
+    <th>Insert</th>
+    <td>Inserisco effettivamente del testo</td>
+  </tr>
+</table>
 
 ---
-
-## Editor Modale
-
-### Editor classico vs Modale
-
-|     Classico      |          Modale           |
-| :---------------: | :-----------------------: |
-|   Scrivi sempre   | Ti muovi ed esegui azioni |
-| Tasti = caratteri |      Tasti = comandi      |
-|    CTRL / menù    |         Modalità          |
-
----
+<!---->
+<!-- ## Editor Modale -->
+<!---->
+<!-- ### Editor classico vs Modale -->
+<!---->
+<!-- |     Classico      |          Modale           | -->
+<!-- | :---------------: | :-----------------------: | -->
+<!-- |   Scrivi sempre   | Ti muovi ed esegui azioni | -->
+<!-- | Tasti = caratteri |      Tasti = comandi      | -->
+<!-- |    CTRL / menù    |         Modalità          | -->
+<!---->
+<!-- --- -->
 
 ## Editor modale
 
 ### Idee fondamentali
 
 - **Digitare ≠ Scrivere**
-- Scrivere è solo *una* modalità
-- La modalità di lavoro è **Normal**
+- Scrivere è solo *una modalità*
+- Di default sono in **Normal**
 
 Visualizza Vim come un **sistema a stati**.
 
@@ -88,7 +102,7 @@ Questo si traduce in **comodità** ed **efficienza**.
 <!--
 backgroundImage: url('img/normal.jpeg')
 backgroundSize: 800px
-backgroundPosition: right
+backgroundPosition: calc(100% - 20px) center
 backgroundRepeat: no-repeat
 -->
 
