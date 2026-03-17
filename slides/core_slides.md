@@ -21,7 +21,7 @@ a cura di **rceschel**
 
 <!-- backgroundImage: color(white)-->
 
-**Obiettivi di oggi**
+## Obiettivi di oggi
 
 - Comprendere il paradigma di **editor modale**
 - Muoversi con naturalezza in un file
@@ -117,7 +117,7 @@ backgroundRepeat: no-repeat
 
 Movimenti fondamentali:
 
-- `h j k l` → sinistra, giù, su, destra
+- `h` `j` `k` `l` → sinistra, giù, su, destra
 - `w` → parola successiva
 - `e` → fine parola
 - `0` → inizio riga
@@ -193,45 +193,65 @@ Stesso *operator*, diverse *motion*.
 
 ---
 
-## Insert mode
-
 <!--
 backgroundImage: url('img/WRITE!.png')
 backgroundSize: 720px
-backgroundPosition: center right
+backgroundPosition: calc(100% - 20px) center
 backgroundRepeat: no-repeat
 -->
 
-<!-- ### Finalmente si scrive -->
+# Insert mode
+
+---
+
+<!-- backgroundImage: color(white)-->
 
 Ci sono vari modi di entare in insert mode.
 
-| Comando | Dove scriverai |
-|--------|---------|
-| `i` | prima del cursore |
-| `I` | inizio riga |
-| `a` | dopo il cursore |
-| `A` | fine riga |
-| `o` | nuova riga sotto |
-| `O` | nuova riga sopra |
+| Comando | Dove scriverai    |
+| ------- | ----------------- |
+| `i`     | prima del cursore |
+| `I`     | inizio riga       |
+| `a`     | dopo il cursore   |
+| `A`     | fine riga         |
+| `o`     | nuova riga sotto  |
+| `O`     | nuova riga sopra  |
 
 Uscire sempre con **ESC**.
 
 ---
+
+<!--
+backgroundImage: url('img/visual.gif')
+backgroundSize: 720px
+backgroundPosition: calc(100% - 20px) center
+backgroundRepeat: no-repeat
+-->
+
+# Visual mode
+## Visualizza e poi agisci
+
+---
+
 <!-- backgroundImage: color(white)-->
 
-## Visual mode
+<!-- ### Selezionare prima di agire -->
 
-### Selezionare prima di agire
+<!-- |           |                               | -->
+<!-- | --------- | ----------------------------- | -->
+<!-- | V         | entri in visual mode          | -->
+<!-- | Motions   | muovendo il cursore selezioni | -->
+<!-- | Operators | si applicano sulla selezione  | -->
 
-|           |                               |
-| --------- | ----------------------------- |
-| V         | entri in visual mode          |
-| Motions   | muovendo il cursore selezioni |
-| Operators | si applicano sulla selezione  |
+## Flusso della visual mode
+
+- Entro in visual mode con **v**
+- Eseguo le **motions**, selezionando
+- Applico gli **operators** sulla selezione
+
 
 È familiare, ma più macchinoso del modello base.
-Usala per eseguire azioni su zone ampie di codice.  <!-- avendo un riscontro visivo prima di applicare le modifiche. -->
+Usala per eseguire azioni su zone ampie di codice.
 
 ---
 
