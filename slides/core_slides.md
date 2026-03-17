@@ -1,43 +1,25 @@
 ---
+
 marp: false
-
-<!-- TOC -->
-
-## Table of Contents
-
-- [paginate: false](#paginate-false)
-- [Perché Vim](#perché-vim)
-- [Vim è diverso](#vim-è-diverso)
-- [Editor Modale](#editor-modale)
-- [| CTRL / menù | Modalità |](#ctrl--menù--modalità)
-- [Editor modale](#editor-modale)
-- [Una casa per tutti](#una-casa-per-tutti)
-- [Muoversi nel file](#muoversi-nel-file)
-- [Lavorare nel file](#lavorare-nel-file)
-- [Vim è un linguaggio](#vim-è-un-linguaggio)
-- [Il modello combinatorio](#il-modello-combinatorio)
-- [Insert mode](#insert-mode)
-- [Visual mode](#visual-mode)
-- [Command line](#command-line)
-- [Cercare nel file](#cercare-nel-file)
-- [Il panic button](#il-panic-button)
-- [**ESC**](#esc)
-- [Sbagliare è permesso](#sbagliare-è-permesso)
-- [Cosa avete visto](#cosa-avete-visto)
-- [E adesso?](#e-adesso)
-- [Creare il proprio ambiente](#creare-il-proprio-ambiente)
-
-<!-- /TOC -->
-
 theme: default
 paginate: false
+
 ---
+
+<!--
+backgroundImage: url('img/vim.png')
+backgroundSize: 700px
+backgroundPosition: calc(100% - 20px) center
+backgroundRepeat: no-repeat
+-->
 
 # Introduzione a Vim
 
 a cura di **rceschel**
 
 ---
+
+<!-- backgroundImage: color(white)-->
 
 **Obiettivi di oggi**
 
@@ -80,11 +62,12 @@ Vim funziona per **modalità**.
 
 ### Editor classico vs Modale
 
-| Classico | Modale |
-|----------------|-----|
-| Scrivi sempre | Ti muovi ed esegui azioni |
-| Tasti = caratteri | Tasti = comandi |
-| CTRL / menù | Modalità |
+|     Classico      |          Modale           |
+| :---------------: | :-----------------------: |
+|   Scrivi sempre   | Ti muovi ed esegui azioni |
+| Tasti = caratteri |      Tasti = comandi      |
+|    CTRL / menù    |         Modalità          |
+
 ---
 
 ## Editor modale
@@ -152,13 +135,11 @@ Movimenti mirati:
 
 ## Lavorare nel file
 
-### Operatori principali
+### Gli operators
 
-In Normal mode:
-
-- `d` → delete (cancella / taglia)
-- `y` → yank (copia)
-- `p` → put (incolla)
+`d` → delete (cancella / taglia)
+`y` → yank (copia)
+`p` → put (incolla)
 
 
 Gli operatori **da soli non fanno nulla**.
