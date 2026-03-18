@@ -1,0 +1,138 @@
+AI DISCLAIMER: questo file è stato generato con Google Gemini a partire dalle slide del corso. Sono state applicate modifiche manuali.
+
+Benvenuto al Workshop di Vim (a cura di rceschel)
+
+Vim è un editor basato sull'efficienza. A differenza degli editor classici, qui non scrivi e basta: "dialoghi" con il testo.
+NOTA: Non aver paura di rovinare questo file. È fatto apposta per essere modificato!
+
+---
+
+LEZIONE 1: La Modalità Inserimento (Insert Mode)
+
+Vim è modale. Di default sei in Normal Mode (per muoverti). Per scrivere devi entrare in Insert Mode.
+
+1. Muovi il cursore sulla riga qui sotto.
+2. Premi `i' per inserire testo prima del cursore.
+3. Scrivi qualcosa.
+4. Premi ESC per tornare in Normal Mode (fondamentale!).
+
+---> [Metti il cursore qui e prova a scrivere]
+
+Sperimenta gli altri ingressi:
+- I: Inizio riga.
+- a: Dopo il cursore (append).
+- A: Fine riga.
+- o: Nuova riga sotto.
+- O: Nuova riga sopra.
+
+---
+
+LEZIONE 2: Muoversi con naturalezza (Motions)
+
+In Normal Mode, dimentica le frecce direzionali. Usa il "cuore" della tastiera:
+
+		k (su)
+h (sin)			l (des)
+		j (giù)
+
+Esercizio: Muoviti tra queste righe e raggiungi la fine:
+- Usa w per saltare di parola in parola (word).
+- Usa e per andare alla fine della parola (end).
+- Usa 0 per scattare all'inizio della riga.
+- Usa $ per scattare alla fine della riga.
+
+---
+
+LEZIONE 3: Il Linguaggio di Vim (Operators + Motions)
+
+Vim funziona per "frasi": OPERATORE + CONTEGGIO + MOVIMENTO.
+
+- d = delete (taglia)
+- y = yank (copia)
+- p = put (incolla)
+
+Esercizio di cancellazione:
+1. Vai sulla riga qui sotto.
+2. Posizionati sulla parola "ERRORE" e premi dw (delete word).
+3. Vai a fine riga e premi d0 (cancella fino a inizio riga).
+
+---> ERRORE Questa riga deve essere pulita ERRORE.
+
+Il trucco della riga intera:
+- Premi dd per cancellare l'intera riga.
+- Premi 3dd per cancellarne tre in un colpo solo.
+
+---
+
+LEZIONE 4: Visual Mode (Seleziona e Agisci)
+
+A volte è meglio vedere cosa si sta facendo.
+
+1. Vai sulla parola qui sotto: EVIDENZIAMI.
+2. Premi v (visual mode).
+3. Muoviti con l o w per selezionare il testo.
+4. Premi d per cancellarlo o y per copiarlo.
+5. Spostati altrove e premi p per incollarlo.
+
+---> EVIDENZIAMI
+
+incolla qui ---> 
+
+---
+
+LEZIONE 5: Il "Panic Button" e gli errori
+
+Se ti perdi o Vim fa cose strane: ESC è il tuo migliore amico. Premilo più volte.
+
+Annullare gli errori:
+- u: Annulla l'ultima azione (Undo).
+- CTRL-R: Ripristina l'azione annullata (Redo).
+- .: Ripete l'ultima modifica fatta. Comodissimo!
+
+---
+
+LEZIONE 6: Cerca e Comanda
+
+Ricerca:
+1. Premi /.
+2. Scrivi la parola "Header" e premi Invio.
+3. Usa n per andare alla prossima occorrenza, N per la precedente.
+
+Command Line:
+Premi `:' per inserire comandi diretti:
+
+    :w  ( write )
+    :q  ( quit )
+    :set number ( Attiva i numeri di riga )
+
+La forza del punto esclamativo (!)
+
+Puoi usare i comandi del terminale senza uscire da Vim scrivendo :! seguito dal comando.
+   
+Prova a scrivere `:!dir` e premi Invio. Vedrai i file nella tua cartella attuale direttamente "sopra" Vim.
+
+Potrebbe essere utile per controllare la Norma senza uscire da Vim!
+
+---
+
+LEZIONE 7: Verso la Personalizzazione (.vimrc)
+
+Le impostazioni come ':set number' sono volatili. Per renderle persistenti, devi scriverle nel tuo file di configurazione.
+
+Compito finale:
+1. Esci da questo file con :q!.
+2. Nel terminale, digita vim ~/.vimrc.
+3. Scrivi all'interno: set number e set relativenumber.
+4. Salva ed esci con :x.
+
+---
+
+RISORSE PER DIVENTARE UN PRO
+
+Il viaggio è appena iniziato. Ecco dove puoi continuare ad allenarti:
+
+- Vimtutor: Digita vimtutor nel tuo terminale per la guida ufficiale interattiva completa (dura circa 30 minuti).
+- Help interno: In Normal Mode, digita :help seguito da un comando (es. :help dd) per leggere la documentazione ufficiale.
+- Vim Adventures: Vuoi imparare giocando? Vai su [https://vim-adventures.com/] — è un gioco di logica ambientato nel mondo di Vim dove ti muovi e interagisci usando i comandi dell'editor.
+
+"Vim appare vuoto e dispersivo, ma per questo potrà conformarsi ad ogni nostra esigenza."
