@@ -73,18 +73,6 @@ Il flusso di lavoro cambia a seconda della modalità in cui ti trovi:
 Queste sono le modalità più comuni.
 
 ---
-<!---->
-<!-- ## Editor Modale -->
-<!---->
-<!-- ### Editor classico vs Modale -->
-<!---->
-<!-- |     Classico      |          Modale           | -->
-<!-- | :---------------: | :-----------------------: | -->
-<!-- |   Scrivi sempre   | Ti muovi ed esegui azioni | -->
-<!-- | Tasti = caratteri |      Tasti = comandi      | -->
-<!-- |    CTRL / menù    |         Modalità          | -->
-<!---->
-<!-- --- -->
 
 ## Editor modale
 
@@ -99,6 +87,36 @@ Visualizza Vim come un **sistema a stati**.
 Complesse operazioni sul testo vengono eseguite con combinazioni **sequenziali** di tasti, secondo una logica sintattica, non solo mnemonica.
 
 Questo si traduce in **comodità** ed **efficienza**.
+
+---
+
+<!--
+backgroundImage: url('img/WRITE!.png')
+backgroundSize: 720px
+backgroundPosition: calc(100% - 20px) center
+backgroundRepeat: no-repeat
+-->
+
+# Insert mode
+
+<img src="img/writing.gif" alt="Descrizione dell'immagine" width="300">
+
+---
+
+<!-- backgroundImage: color(white)-->
+
+Ci sono vari modi di entare in insert mode.
+
+| Comando | Dove scriverai    |
+| ------- | ----------------- |
+| `i`     | prima del cursore |
+| `I`     | inizio riga       |
+| `a`     | dopo il cursore   |
+| `A`     | fine riga         |
+| `o`     | nuova riga sotto  |
+| `O`     | nuova riga sopra  |
+
+Uscire sempre con **ESC**.
 
 ---
 <!--
@@ -199,39 +217,6 @@ Traduce in comandi il nostro linguaggio naturale.
 
 Stesso *operator*, diverse *motion*.
 **Nota**: un operatore ripetuto due volte si applica a tutta la linea.
-
----
-
-<!--
-backgroundImage: url('img/WRITE!.png')
-backgroundSize: 720px
-backgroundPosition: calc(100% - 20px) center
-backgroundRepeat: no-repeat
--->
-
-# Insert mode
-
-<img src="img/writing.gif" alt="Descrizione dell'immagine" width="300">
-<!-- <img src="img/WRITE!.png" alt="Descrizione dell'immagine" width="300"> -->
-
----
-
-<!-- backgroundImage: color(white)-->
-
-Ci sono vari modi di entare in insert mode.
-
-| Comando | Dove scriverai    |
-| ------- | ----------------- |
-| `i`     | prima del cursore |
-| `I`     | inizio riga       |
-| `a`     | dopo il cursore   |
-| `A`     | fine riga         |
-| `o`     | nuova riga sotto  |
-| `O`     | nuova riga sopra  |
-
-<!-- DEVO METTERE LE GIF ACCANTO LA TABELLA -->
-
-Uscire sempre con **ESC**.
 
 ---
 
