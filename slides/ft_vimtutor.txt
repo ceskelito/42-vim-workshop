@@ -3,7 +3,9 @@ AI DISCLAIMER: questo file è stato generato con Google Gemini a partire dalle s
 Benvenuto al Workshop di Vim (a cura di rceschel)
 
 Vim è un editor basato sull'efficienza. A differenza degli editor classici, qui non scrivi e basta: "dialoghi" con il testo.
+
 NOTA: Non aver paura di rovinare questo file. È fatto apposta per essere modificato!
+		Essendo una copia dell'originale potrai replicare il tutorial quando vuoi.
 
 ---
 
