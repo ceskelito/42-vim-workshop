@@ -58,7 +58,7 @@ Il flusso di lavoro cambia a seconda della modalità in cui ti trovi:
 <br>
   <tr>
     <th>Normal</th>
-    <td>Eseguo operazioni rapide e mirate sul testo</td>
+    <td>Il punto di partenza per lavorare nel file</td>
   </tr>
   <tr>
     <th>Visual</th>
@@ -69,6 +69,8 @@ Il flusso di lavoro cambia a seconda della modalità in cui ti trovi:
     <td>Inserisco effettivamente del testo</td>
   </tr>
 </table>
+
+Queste sono le modalità più comuni.
 
 ---
 <!---->
@@ -113,15 +115,24 @@ backgroundRepeat: no-repeat
 
 <!-- backgroundImage: color(white)-->
 
+Nella **Normal Mode** posso muovermi nel file e modificare il testo.
+
+Posso anche dare **comandi** al mio editor, come annullare l'ultima
+modifica o eliminare una riga.
+
+Dalla Normal Mode posso raggiungere tutte le altre modalità.
+
+---
+
 ## Muoversi nel file
 
-Movimenti fondamentali:
+**Motions** fondamentali:
 
-- `h` `j` `k` `l` → sinistra, giù, su, destra
-- `w` → parola successiva
-- `e` → fine parola
-- `0` → inizio riga
-- `$` → fine riga
+`h` `j` `k` `l` → sinistra, giù, su, destra
+`w` → `word` - parola successiva
+`e` → `end` - fine parola
+`0` → inizio riga
+`$` → fine riga
 
 ---
 
@@ -149,7 +160,7 @@ Movimenti mirati:
 
 ## Lavorare nel file
 
-### Gli operators
+**Operators** fondamentali:
 
 `d` → delete (cancella / taglia)
 `y` → yank (copia)
@@ -165,9 +176,7 @@ Serve un obiettivo.
 
 La formula magica:
 
-```
-OPERATOR [+ COUNT] + MOTION
-```
+`OPERATOR` + `COUNT` + `MOTION`
 
 Traduce in comandi il nostro linguaggio naturale.
 
@@ -179,13 +188,13 @@ Traduce in comandi il nostro linguaggio naturale.
 
 ## Il modello combinatorio
 
-| Comando | Significato |
-|--------|-------------|
-| `dw` | delete word |
-| `d2w` | delete 2 words |
-| `d$` | delete to end of line |
-| `dd` | delete line |
-| `3dd` | 3 times delete line |
+| Comando | Significato           |
+| ------- | --------------------- |
+| `dw`    | delete word           |
+| `d2w`   | delete 2 words        |
+| `d$`    | delete to end of line |
+| `dd`    | delete line           |
+| `3dd`   | 3 times delete line   |
 
 
 Stesso *operator*, diverse *motion*.
@@ -261,6 +270,70 @@ Usala per eseguire azioni su zone ampie di codice.
 ---
 
 <!--
+backgroundImage: url('img/red_button_esc.png')
+backgroundSize: 670px
+backgroundPosition: right
+backgroundRepeat: no-repeat
+-->
+
+
+## Il panic button
+
+Se non sai cosa sta succedendo:
+
+## **ESC**
+
+- Torni sempre in Normal mode
+- Puoi premerlo più volte
+
+Premilo senza paura, o quando ne hai.
+
+---
+
+<!-- backgroundImage: color(white)-->
+
+## **Sbagliare è permesso**
+
+| Comando  | Effetto                                        |
+| -------- | ---------------------------------------------- |
+| `u`      | annulla l'ultima modifica                      |
+| `U`      | annulla tutte le modifiche sulla riga corrente |
+| `CTRL-R` | ripristina le modifiche annullate              |
+| `.`      | ripete ultima modifica                         |
+
+Riduce errori e fatica.
+
+*Questi comandi sono validi per la normal mode*
+
+---
+
+<!--
+backgroundImage: url('img/search.gif')
+backgroundSize: 700px
+backgroundPosition: calc(100% - 25px) center
+backgroundRepeat: no-repeat
+-->
+
+## **Cercare nel file**
+
+`/` → entro in **Search Mode**
+
+Digito i termini di ricerca
+
+`n` → **prossimo** match
+`N` → match **precedente**
+
+<!-- | Comando | Azione             | -->
+<!-- | ------- | ------------------ | -->
+<!-- | `/test` | cerca avanti       | -->
+<!-- | `n`     | prossimo risultato | -->
+<!-- | `N`     | precedente         | -->
+
+
+
+---
+
+<!--
 backgroundImage: url('img/hackerman.png')
 backgroundSize: 700px
 backgroundPosition: calc(100% - 50px) center
@@ -284,53 +357,6 @@ backgroundRepeat: no-repeat
 
 Nella command line possiamo dare comandi e istruzioni direttamente a Vim.
 È utile per cambiare impostazioni al volo, e per eseguire operazioni avanzate.
-
----
-
-## Cercare nel file
-
-| Comando | Azione             |
-| ------- | ------------------ |
-| `/test` | cerca avanti       |
-| `?test` | cerca indietro     |
-| `n`     | prossimo risultato |
-| `N`     | precedente         |
-
----
-
-<!--
-backgroundImage: url('img/red_button_esc.png')
-backgroundSize: 670px
-backgroundPosition: right
-backgroundRepeat: no-repeat
--->
-
-
-## Il panic button
-
-Se non sai cosa sta succedendo:
-
-## **ESC**
-
-- Torni sempre in Normal mode
-- Puoi premerlo più volte
-
-Premilo senza paura, o quando ne hai.
-
----
-
-<!-- backgroundImage: color(white)-->
-
-## Sbagliare è permesso
-
-| Comando | Effetto                                        |
-| ------- | ---------------------------------------------- |
-| `u`     | annulla l'ultima modifica                      |
-| `U`     | annulla tutte le modifiche sulla riga corrente |
-| `<C-r>` | ripristina le modifiche annullate              |
-| `.`     | ripete ultima modifica                         |
-
-Riduce errori e fatica.
 
 ---
 
