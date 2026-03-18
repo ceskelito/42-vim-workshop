@@ -308,13 +308,17 @@ Digito i termini di ricerca
 `n` → **prossimo** match
 `N` → match **precedente**
 
-<!-- | Comando | Azione             | -->
-<!-- | ------- | ------------------ | -->
-<!-- | `/test` | cerca avanti       | -->
-<!-- | `n`     | prossimo risultato | -->
-<!-- | `N`     | precedente         | -->
+---
 
+<!-- backgroundImage: color(white)-->
+## Cosa avete visto
 
+- Vim è **modale**
+- Normal mode è centrale
+- Operatore + movimento
+- Undo, ricerca, ripetizione
+
+Questo è **il core di Vim**.
 
 ---
 
@@ -331,28 +335,39 @@ backgroundRepeat: no-repeat
 ---
 
 <!-- backgroundImage: color(white)-->
-## Command line
+<!-- ## Comandi base -->
+Nella command line possiamo dare 
+**comandi e istruzioni** direttamente a Vim.
 
-| Comando | Azione           |
-| ------- | ---------------- |
-| `:w`    | salva            |
-| `:q`    | esci             |
-| `:x`    | salva ed esci    |
-| `:42`   | vai alla riga 42 |
+| Comando |    Azione    |
+| :-----: | :----------: |
+|  `:w`   |    write     |
+|  `:q`   |     quit     |
+|  `:x`   | write + quit |
 
-Nella command line possiamo dare comandi e istruzioni direttamente a Vim.
-È utile per cambiare impostazioni al volo, e per eseguire operazioni avanzate.
+È utile per cambiare impostazioni al volo,
+e per eseguire operazioni avanzate.
 
 ---
 
-## Cosa avete visto
+## Ecco alcuni comandi utili
 
-- Vim è **modale**
-- Normal mode è centrale
-- Operatore + movimento
-- Undo, ricerca, ripetizione
+| Comando        | Azione                                     |
+| -------------- | ------------------------------------------ |
+| `:42`          | vai alla riga 42                           |
+| `:Stdheader`   | scrivi l'header 42                         |
+| `:set number`  | aggiunge i numeri di riga all'interfaccia  |
+| `:open <file>` | apre un file dentro vim                    |
+| `:! <cmd>`     | esegue <cmd> nella shell e mostra l'output |
 
-Questo è **il core di Vim**.
+---
+
+## Chiedi consiglio!
+
+Se non ricordi un comando, prova con **TAB** o **<CRTL-D>**
+
+<!-- <img src="./img/commandline.mp4"> -->
+<img src="img/commandline.gif" alt="Descrizione dell'immagine" width="700">
 
 ---
 
