@@ -394,10 +394,27 @@ backgroundRepeat: no-repeat
 
 ---
 
-PARLARE DI .vimrc E COME VIENE LETTO
+<!-- backgroundImage: color(white) -->
+
+## Configurazioni persistenti
+
+Le impostazioni cambiate nella **Command Line** (es. `:set number`) sono volatili: *svaniscono quando chiudi Vim*.
+
+### Il file `.vimrc` 
+<!-- (Vim Run Control) -->
+
+È lo script di configurazione che risiede nella tua *home* (`~/.vimrc`).
+
+Puoi impartire le stesse istruzioni della *command line*,
+vim lo **esegue riga per riga** ad ogni avvio.
+
+<!-- - **Sintassi**: Puoi dare gli stessi comandi della *command line*. -->
+<!-- - **Persistenza**: Quando apri Vim, lui legge questo file *riga per riga*. -->
+
+Questo si traduce in opzioni che si mantengono fra le sessioni.
+È come **cambiare le impostazioni**.
 
 ---
-<!-- backgroundImage: color(white) -->
 <!--
 backgroundImage: url('img/chefs-kiss-french-chef.gif')
 backgroundSize: 1400px
